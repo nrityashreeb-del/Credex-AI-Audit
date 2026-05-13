@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credex AI Spend Auditor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Spend Auditor</h1>
+            <p>Optimize your team's AI costs in seconds.</p>
+        </header>
+
+        <section id="audit-tool">
+            <div class="input-group">
+                <label>Total Employees using AI</label>
+                <input type="number" id="teamSize" placeholder="e.g. 10">
+                
+                <label>Current Total Monthly Spend ($)</label>
+                <input type="number" id="totalSpend" placeholder="e.g. 300">
+                
+                <button onclick="runAudit()">Analyze Spend</button>
+            </div>
+
+            <div id="results" class="hidden">
+                <div class="report-card">
+                    <h3>Your Savings Report</h3>
+                    <p id="savingsText"></p>
+                    <div id="cta-box">
+                        <p>You qualify for a free Credex Optimization Session.</p>
+                        <button class="cta">Book Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
