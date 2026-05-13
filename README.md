@@ -15,9 +15,6 @@ The **AI Spend Auditor** calculates potential savings based on team size and cur
 - **ARCHITECTURE.md:** Overview of the application structure and logic.
 - **PRICING_DATA.md:** Verified links to official vendor pricing (OpenAI, Anthropic, Google).
 
-## 🚀 Live Demo
-[INSERT YOUR GITHUB PAGES LINK HERE]
-
 ---
-**Developed by [Your Name]**
+**Developed by Nrityashree Biswas**
 *Computer Engineering Student | Rapid Sprint Execution*
