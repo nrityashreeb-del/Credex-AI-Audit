@@ -1,1 +1,141 @@
-.
+:root {
+    --primary-bg: #0f172a; /* Deep Navy */
+    --card-bg: #1e293b;
+    --accent-color: #38bdf8; /* Sky Blue */
+    --success-green: #22c55e;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+input {
+    background: #0f172a;
+    border: 1px solid #334155;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #0f172a;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+#results {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #334155;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.report-card {
+    background: rgba(56, 189, 248, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--accent-color);
+    text-align: center;
+}
+
+#savingsText {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#cta-box {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.cta {
+    background-color: var(--success-green);
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
